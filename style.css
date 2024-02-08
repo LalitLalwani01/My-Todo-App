@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+height: 100vh;
+background: linear-gradient(
+14deg,
+#fc7475 0%,
+#fc7475 40%,
+#5458db 30%,
+#5458db 100%
+);
+display: flex;
+justify-content: center;
+align-items:end;
+font-family: Arial, Helvetica, sans-serif;
+/* background-repeat: no-repeat; */
+
+}
+.container{
+/* margin-top: 94px; */
+position: relative;
+width: 65vw;
+height: 89vh;
+background-color: white;
+border-radius: 20px 20px 0 0;
+overflow: auto;
+}
+.container::-webkit-scrollbar {
+width: 1px;
+}
+.top-part{
+padding: 40px 40px 20px 40px ;
+border-radius: 20px 20px 0 0;
+background-color: ghostwhite;
+border-bottom: 1px solid rgb(212, 207, 207);
+display: flex;
+justify-content: space-between;
+line-height: 15px;
+
+}
+.blue-text{
+font-size: 40px;
+color: blue;
+}
+.month{
+font-size: 30px;
+color: rgb(168, 166, 166);
+}
+.task{
+font-size: 25px;
+color: rgb(169, 166, 166);
+}
+
+.list{
+position: relative;
+bottom: 20px;
+}
+.icon-div {
+display: flex;
+justify-content: end;
+}
+.icon {
+background-color: #fc7475;
+border-radius: 100%;
+width: 80px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 60px;
+color: #fff;
+font-weight: 700;
+cursor: pointer;
+margin-right: 40px;
+position: relative;
+bottom: 42px;
+}
+
+input[type=checkbox]{
+width: 30px;
+height: 30px;
+accent-color: palevioletred;
+mix-blend-mode: multiply;
+outline: none;
+}
+.details{
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 0 0 30px;
+}
+.morning-text{
+font-size: 30px;
+color: rgb(168, 166, 166) ;
+}
+del{
+color:  rgb(168, 166, 166);
+}
+.time{
+font-size: 20px;
+color:  rgb(168, 166, 166);
+font-weight: 600;
+}
+.data-row{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px;
+color: gray;
+border-bottom: 1px solid rgb(212, 207, 207);
+
+}
+.comments{
+font-size: 25px;
+}
+.last-child{
+border-left: 9px solid rgba(0, 0, 255, 0.436);
+}
+.del {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+@media only screen and (max-width: 768px){
+.container{
+width: 80vw;
+}
+
+}
+@media only screen and (max-width: 590px){
+.container{
+width: 90vw;
+}
+}
+
+@media only screen and (max-width: 520px){
+.container{
+width: 100%;
+border-radius: 0%;
+height: 100%;
+}
+.top-part{
+    padding: 30px;
+border-radius: 0;
+}
+.blue-text{
+font-size: 30px;
+}
+.month{
+font-size: 24px;
+}
+.task{
+    padding-top: 8px;
+font-size: 25px;
+}
+.morning-text{
+font-size: 25px;
+padding: 0 10px;
+}
+.icon{
+width: 60px;
+height: 60px;
+font-size: 40px;
+bottom: 32px;
+}
+
+}
+
+@media only screen and (max-width: 375px){
+.blue-text
+{
+font-size:30px; 
+}
+.morning-text{
+    font-size: 22px;
+}
+.month,
+.time
+{
+font-size: 18px;
+}
+.task{
+    font-size: 20px;
+    padding-top: 12px;
+}
+.time{
+margin: 0 20px;
+}
+.comments{
+    font-size: 20px;
+    margin: 0 0 0 10px;
+}
+
+input[type=checkbox]{
+width: 20px;
+height: 20px;
+}
+.details{
+margin: 0 0 0 4px;
+}
+.data{
+padding: 0 18px;
+}
+.data-row{
+padding: 45px 30px;
+}
+.top-part{
+    padding: 20px;
+}
+
+}
+@media only screen and (max-width: 400px){
+    .top-part{
+        padding: 20px;
+    }
+    .details{
+        margin: 0 0 0 20px;
+        }
+        .data{
+            padding: 0 33px;
+            }
+
+
+}
+@media only screen and (max-width: 430px){
+    .time{
+        margin: 0 0 0 15px;
+    }
+    .data{
+      padding: 0  35px;
+    }
+}

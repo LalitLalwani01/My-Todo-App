@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-part">
+            <div class="left-content">
+                <p class="blue-text" id="current-date"></p>
+                <p class="month" id="current-month"></p>
+            </div>
+            <div class="right-content">
+                <p class="task">Your Tasks</p>
+            </div>
+        </div>
+        <div class="icon-div"><div class="icon" id="btn">+</div></div>
+       <div class="list" id="list">
+        <div class="data-row">
+            <input type="checkbox" class="checkbox">
+            <div class="details ">
+                <p class="comments">Morning Run</p>
+                <p class="time">7:00 AM</p>
+            </div>
+        </div>
+        <div class="data-row">
+            <input type="checkbox" class="checkbox">
+            <div class="details">
+                <p class="comments">Buy Pizza on the way to work</p>
+                <p class="time">8:00 AM</p>
+            </div>
+        </div>
+        <div class="data-row">
+            <input type="checkbox" class="checkbox">
+            <div class="details">
+                <p class="comments">10AM Meeting </p>
+                <p class="time">10:00 AM</p>
+            </div>
+        </div>
+        <div class="data-row last-child">
+            <input type="checkbox" class="checkbox">
+            <div class="details">
+                <p class="comments">Work Lunch with the Dudes</p>
+                <p class="time">12:00 AM</p>
+            </div>
+        </div>
+       </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
